@@ -8,6 +8,8 @@ function imc () {
     const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
 
+    const alturaInMeters = altura / 100;
+
     const valorIMC = (peso / (alturaInMeters * alturaInMeters)).toFixed(1);
 
     if (nome !== '' && altura !== '' && peso !== '') {
